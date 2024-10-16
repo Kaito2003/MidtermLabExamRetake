@@ -35,7 +35,7 @@ class ExampleStaggeredAnimations extends StatefulWidget {
 class _ExampleStaggeredAnimationsState extends State<ExampleStaggeredAnimations>
     // Mixin the SingleTickerProviderStateMixin to provide a single ticker
     with SingleTickerProviderStateMixin {
- 
+  
   // 9 Declare a late variable _drawerSlideController of type AnimationController
     late AnimationController _drawerSlideController;
 
@@ -186,9 +186,9 @@ Widget _buildDrawer() {
         // The translation offset
         translation: Offset(1.0 - _drawerSlideController.value, 0.0),
         // The child of the FractionalTranslation
-        child: _isDrawerClosed()
+        child: _isDrawerClosed() 
           // If the drawer is closed, show an empty SizedBox
-          ? const SizedBox()
+          ? const SizedBox() 
           // If the drawer is not closed, show the Menu
           : const Menu(),
       );
